@@ -26,14 +26,6 @@ object HelloWorld
 
     def main(args: Array[String])
     {
-        
-
-        /*s
-        * sunnyToday.observe(true)
-        * val alg = VariableElimination(greetingToday, sunnyTomorrow, greetingTomorrow)
-        * alg.start()
-        * println("Probability of greetingToday: " + alg.probability(greetingToday, true))
-        * alg.kill() */
         println(VariableElimination.probability(greetingToday, "Hello, world!"))
         
         sideOfBed.observe(true)
